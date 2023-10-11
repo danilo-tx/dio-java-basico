@@ -15,16 +15,16 @@ public class AdiantamentoDeSalario {
             double comissao = vendas * 0.022;
 
             if(vendas >= meta){
-                if(vendas >= meta * 1.2){
-                    premiacao = 1685;
-                }else if(vendas >= meta * 1.1){
+                if(vendas >= meta * 1.1 && vendas < meta * 1.2){
                     premiacao = 1217;
+                }else if(vendas >= meta * 1.2){
+                        premiacao = 1685;
                 }else{
                     premiacao = 936;
                 }
             }
-
-            System.out.println("Você irá receber R$: " + new DecimalFormat("#,##0.00").format(premiacao + adiantamento + comissao) + " no dia 15.");
+            System.out.println("Você irá receber " + new DecimalFormat("R$ #,##0.00").format(premiacao + adiantamento + comissao) + " no dia 15.");
         }
     }
 }
+
