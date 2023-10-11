@@ -1,11 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class TiposVariaveis {
-    /**
-     * @param args
-     * @throws Exception
-     */
+public class AdiantamentoDeSalario {
     public static void main(String[] args) throws Exception {
         
         try (Scanner sc = new Scanner(System.in)) {
@@ -28,7 +24,6 @@ public class TiposVariaveis {
                 }
             }
 
-            
             System.out.println("Você irá receber R$: " + new DecimalFormat("#,##0.00").format(premiacao + adiantamento + comissao) + " no dia 15.");
         }
     }
